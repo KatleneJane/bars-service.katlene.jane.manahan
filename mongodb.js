@@ -13,8 +13,8 @@ MongoClient.connect(
     }
     const db = client.db(databaseName);
     console.log("Connected successfully!!!");
-    db.dropDatabase();
 
+    db.dropDatabase()
     db.createCollection("billings");
     db.collection("billings").insertMany([
       {
@@ -106,5 +106,5 @@ MongoClient.connect(
         },
       },
     ]);
-  }
+
 );
